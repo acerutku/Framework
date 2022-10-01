@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="belirli methodlari calistir">
+    <test name="methodlar">
+        <classes>
+            <class name="tests.day19.C01_WebTableDinamikLocate">
+                <methods>
+                    <include name="satirYazdirTesti"></include>  <!--include :bu method sadece yazilan methodu  calistirir-->
+                </methods>
+            </class>
+            <class name="tests.day16.C02_PageIlkClass">
+                <methods>
+                    <exclude name="test02"></exclude> <!-- exclude :bu method haric diger methodlari calistirir-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+<!--eger bir test icerisinde birden fazla hiyerarsi olusturmamiz gerekirse
+uygun kirilma noktasi belirleyip oradan hiyerarsiyi yeniden olusturabiliriz-->
+
+<!--ayni anda iki farkli classtan calistirmak istersek
+(method veya class in hepsi farketmez) <classes> </classes> icinde ayri bir class yapariz..
+sayfayi calistirmak icin sag click Run sec-->
+
+<!--html uzantili dosyalari- raporlari acmak icin de solda test output altina gelen
+.html uzantili dosyaya sag click -> Open in-> Browser-> Chrome  secilir   -->
+

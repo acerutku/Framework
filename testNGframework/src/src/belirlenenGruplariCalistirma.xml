@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="grup calistirma">
+    <test name="miniRegression">
+        <groups>
+            <run>
+                <exclude name= "smoke" /> <!--bu grup haric digerleri calissin -->
+                <include name="miniRegression" />   <!--sadece bu grup calissin -->
+            </run>
+        </groups>
+        <!--birinci kismi (<groups>) ne yapacagi,
+        ikinci kismi(<packages>) nerden alacagini belirtir-->
+        <packages>
+            <package name="tests.day16"></package>
+            <package name="tests.day18"></package>
+            <package name="tests.day19"></package>
+        </packages>
+    </test>
+</suite>

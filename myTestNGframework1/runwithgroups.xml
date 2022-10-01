@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite 4 " verbose="1">
+    <test name="Group 1">
+        <groups>
+            <run>
+                <!-- sadece @Test(group="group Test1) annotation i olan methodlari calistirir -->
+                <include name="grouptest1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.techproed.smoketest.FHCNegativeTest"/>
+        </classes>
+    </test>
+</suite>
+       
